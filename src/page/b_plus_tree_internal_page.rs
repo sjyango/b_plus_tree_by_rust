@@ -156,48 +156,4 @@
 //         }
 //     }
 //
-//     /// Remove the key & value pair in internal page according to input index(a.k.a array offset)
-//     pub fn remove(&mut self, index: usize) {
-//         self.page_data_.remove(index);
-//     }
-//
-//     pub fn remove_and_return_only_child(&mut self) -> Page<K, V> {
-//         let value = self.value_at(0);
-//         self.page_data_.clear();
-//         value
-//     }
-//
-//     /// Remove all of key & value pairs from this page to "recipient" page.
-//     /// The middle_key is the separation key you should get from the parent. You need
-//     /// to make sure the middle key is added to the recipient to maintain the invariant.
-//     pub fn move_all_to(&mut self,  recipient: &mut Self, middle_key: K) {
-//         self.set_key_at(0, middle_key);
-//         recipient.page_data_.append(&mut self.page_data_.to_vec());
-//         self.page_data_.clear();
-//     }
-//
-//     /// Remove the first key & value pair from this page to tail of "recipient" page.
-//     ///
-//     /// The middle_key is the separation key you should get from the parent. You need
-//     /// to make sure the middle key is added to the recipient to maintain the invariant.
-//     pub fn move_first_to_end_of(&mut self, recipient: &mut Self, middle_key: K) {
-//         self.set_key_at(0, middle_key);
-//         assert!(self.page_data_.len() > 0);
-//         let first_item = self.page_data_.remove(0);
-//         recipient.page_data_.push(first_item);
-//     }
-//
-//     /// Remove the last key & value pair from this page to head of "recipient" page.
-//     ///
-//     /// You need to handle the original dummy key properly, e.g. updating recipient’s array to position the middle_key at the
-//     /// right place.
-//     pub fn move_last_to_front_of(&mut self,  recipient: &mut Self, middle_key: K) {
-//         recipient.set_key_at(0, middle_key);
-//         assert!(self.page_data_.len() > 0);
-//         let last_item = self.page_data_.pop().unwrap();
-//         recipient.page_data_.insert(0, last_item);
-//     }
-// }
-//
-//
-//
+
