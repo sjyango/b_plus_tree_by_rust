@@ -170,39 +170,4 @@
 //         }
 //     }
 //
-//     pub fn move_all_to(&mut self,  recipient: &mut Self) {
-//         recipient.page_data_.append(&mut self.page_data_.to_vec());
-//         self.page_data_.clear();
-//     }
-//
-//     pub unsafe fn move_half_to(&mut self, recipient: Page<K, V>) {
-//         let start_index = self.get_min_size();
-//         let pre_size = self.get_size();
-//         let move_num = pre_size - start_index;
-//         if let BPlusTreePage::LeafPage(internal_page) = recipient.unwrap().as_mut() {
-//             internal_page.page_data_.append(&mut self.page_data_.split_off(start_index));
-//             assert_eq!(pre_size - move_num, self.get_size());
-//         }
-//     }
-//
-//     /// Remove the key & value pair in internal page according to input index(a.k.a array offset)
-//     pub fn remove(&mut self, index: usize) {
-//         self.page_data_.remove(index);
-//     }
-//
-//     pub fn move_first_to_end_of(&mut self, recipient: &mut Self) {
-//         assert!(self.page_data_.len() > 0);
-//         let first_item = self.page_data_.remove(0);
-//         recipient.page_data_.push(first_item);
-//     }
-//
-//     /// Remove the last key & value pair from this page to head of "recipient" page.
-//     ///
-//     /// You need to handle the original dummy key properly, e.g. updating recipient’s array to position the middle_key at the
-//     /// right place.
-//     pub fn move_last_to_front_of(&mut self,  recipient: &mut Self) {
-//         assert!(self.page_data_.len() > 0);
-//         let last_item = self.page_data_.pop().unwrap();
-//         recipient.page_data_.insert(0, last_item);
-//     }
 // }
