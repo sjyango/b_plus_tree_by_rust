@@ -140,34 +140,5 @@
 //
 //
 //
-//     /// 查找internal page的array中第一个>key(注意不是>=)的下标(upper_bound)，然后据其确定value
-//     ///
-//     /// 注意：value指向的是子树，或者说指向的是当前内部结点的下一层某个结点
-//     /// 假设下标为i的子树中的所有key为subtree(value(i))，下标为i的关键字为key(i)
-//     /// 那么满足 key(i-1) <= subtree(value(i)) < key(i)
-//     ///
-//     /// 这里手写二分查找upper_bound，速度快于for循环的顺序查找
-//     /// array类型为std::pair<KeyType, ValueType>
-//     /// 正常来说下标范围是[0,size-1]，但是0位置设为无效
-//     /// 所以直接从1位置开始，作为下界，下标范围是[1,size-1]
-//     /// assert(GetSize() >= 1); 这里总是容易出现错误
-//     pub fn lookup(&self, key: &K) -> Option<V> {
-//         let target_index = self.key_index(key);
-//         if target_index == self.get_size() || self.key_at(target_index) != *key {
-//             None
-//         } else {
-//             self.page_data_[target_index].value.clone()
-//         }
-//     }
-//
-//     pub fn remove_and_delete_record(&mut self, key: K) -> SizeT {
-//         let target_index = self.key_index(&key);
-//         if target_index == self.get_size() || self.key_at(target_index) != key {
-//             self.get_size()
-//         } else {
-//             self.page_data_.remove(target_index);
-//             self.get_size()
-//         }
-//     }
 //
 // }
