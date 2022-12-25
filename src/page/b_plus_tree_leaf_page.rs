@@ -108,36 +108,6 @@
 //         None
 //     }
 //
-//     pub fn get_next_page(&self) -> Page<K, V> {
-//         self.next_page_.clone()
-//     }
-//
-//     pub fn set_next_page(&mut self, next_page: Page<K, V>) {
-//         self.next_page_ = next_page;
-//     }
-//
-//     pub fn check_duplicated(&self, key: K) -> bool {
-//         let index = self.key_index(&key);
-//         index < self.get_size() && self.key_at(index) == key
-//     }
-//
-//     pub fn insert(&mut self, key: K, value: V) -> SizeT {
-//         let insert_index = self.key_index(&key); // 查找第一个>=key的下标
-//
-//         // key重复了
-//         if self.key_at(insert_index) == key {
-//             return self.get_size();
-//         }
-//
-//         // 数组下标>=insert_index的元素整体后移1位
-//         // [insert_index, size - 1] --> [insert_index + 1, size]
-//         self.page_data_.insert(insert_index, MappingType {
-//             key,
-//             value: Some(value)
-//         });
-//         self.get_size()
-//     }
-//
 //
 //
 //
