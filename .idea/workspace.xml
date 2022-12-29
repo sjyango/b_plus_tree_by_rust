@@ -19,6 +19,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ff4735b-cc0b-40c5-a02c-0676c0a85c12" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,24 +53,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ysj/CLionProjects/BPlusTree/src/page&quot;,
-    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/ysj/CLionProjects/BPlusTree/src/index/b_plus_tree.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/ysj/CLionProjects/BPlusTree/src/index/b_plus_tree_index.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/ysj/CLionProjects/BPlusTree/src/page/b_plus_tree_internal_page.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/ysj/CLionProjects/BPlusTree/src/page/b_plus_tree_leaf_page.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/ysj/CLionProjects/BPlusTree/src/page/b_plus_tree_page.rs&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/Users/ysj/CLionProjects/BPlusTree/src/page",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.disableDetachedFileInspection/Users/ysj/CLionProjects/BPlusTree/src/index/b_plus_tree.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/ysj/CLionProjects/BPlusTree/src/index/b_plus_tree_index.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/ysj/CLionProjects/BPlusTree/src/page/b_plus_tree_internal_page.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/ysj/CLionProjects/BPlusTree/src/page/b_plus_tree_leaf_page.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/ysj/CLionProjects/BPlusTree/src/page/b_plus_tree_page.rs": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/page" />
@@ -218,6 +220,7 @@
       <workItem from="1670901918789" duration="552000" />
       <workItem from="1671117181289" duration="9285000" />
       <workItem from="1671514558294" duration="607000" />
+      <workItem from="1672298184989" duration="12936000" />
     </task>
     <servers />
   </component>
