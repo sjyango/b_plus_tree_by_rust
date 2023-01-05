@@ -10,10 +10,6 @@
 //     next_page_: Page<K, V>
 // }
 //
-// impl<K, V> From<Page<K, V>> for BPlusTreeLeafPage<K, V>
-//     where K: Default + Clone, V: Default + Clone {
-//     fn from(page: Page<K, V>) -> Self {
-//         unsafe {
 //             assert!(page.is_some());
 //             if let BPlusTreePage::LeafPage(leaf_page) = page.unwrap().as_ref() {
 //                 Self {
