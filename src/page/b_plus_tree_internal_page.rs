@@ -13,18 +13,6 @@
 //
 //
 //
-// // public methods
-// impl<K, V> BPlusTreeInternalPage<K, V>
-//     where K: Default + Clone + PartialOrd, V: Default + Clone {
-//     pub fn new(is_root: bool, max_size: SizeT) -> Page<K,V> {
-//         let new_page: BPlusTreeInternalPage<K, V> = Self {
-//             is_root_: is_root,
-//             max_size_: max_size,
-//             page_data_: Vec::new()
-//         };
-//         let mut new_page = BPlusTreePage::InternalPage(new_page);
-//         NonNull::new(&mut new_page as *mut BPlusTreePage<K, V>)
-//     }
 //
 //     pub fn is_root_page(&self) -> bool {
 //         self.is_root_
